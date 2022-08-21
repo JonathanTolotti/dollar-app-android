@@ -1,8 +1,10 @@
-package com.example.dollarapp;
+package com.example.dollarapp.Ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.dollarapp.R;
 
 public class LoginActivity extends AppCompatActivity {
 
