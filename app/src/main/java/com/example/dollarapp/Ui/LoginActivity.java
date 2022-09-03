@@ -2,6 +2,7 @@ package com.example.dollarapp.Ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -44,7 +45,9 @@ public class LoginActivity extends AppCompatActivity {
      */
     private void doLogin() {
         if (userPhoneValue.equals("51996766591") && userPassValue.equals("1234")) {
-            Toast.makeText(this, "Usuário correto", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
         } else {
             Toast.makeText(this, "Usuário e/ou senha inválido(s)", Toast.LENGTH_SHORT).show();
         }
